@@ -1,0 +1,20 @@
+{
+  "name": "fractals",
+  "version": "1.0.0",
+  "description": "Fractals rendering app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "fractals",
+    "julia",
+    "mandelbrot",
+    "demo"
+  ],
+  "author": "Matej ch",
+  "devDependencies": {
+    "electron": "^21.0.1"
+  }
+}

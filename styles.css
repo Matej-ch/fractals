@@ -1,0 +1,7 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+*, ::after,::before {
+    margin: 0;
+    box-sizing: border-box;
+}
