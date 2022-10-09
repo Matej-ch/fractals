@@ -1,5 +1,6 @@
 {
   "name": "fractals",
+  "productName": "Fractals",
   "version": "1.0.0",
   "description": "Fractals rendering app",
   "main": "main.js",
@@ -16,5 +17,8 @@
   "author": "Matej ch",
   "devDependencies": {
     "electron": "^21.0.1"
+  },
+  "dependencies": {
+    "toastify-js": "^1.12.0"
   }
 }
