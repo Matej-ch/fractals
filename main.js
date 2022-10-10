@@ -24,8 +24,28 @@ function createMainWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, './renderer/index.html'))
 
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+}
+
+function createAboutWindow ()
+{
+  const aboutWindow = new BrowserWindow({
+    title: "About",
+    width: isDev ? 1000 : 800,
+    height: 600,
+  })
+
+  aboutWindow.loadFile(path.join(__dirname, './renderer/about.html'))
+}
+
+function createGalleryWindow ()
+{
+  const galleryWindow = new BrowserWindow({
+    title: "Gallery",
+    width: isDev ? 1000 : 800,
+    height: 600,
+  })
+
+  galleryWindow.loadFile(path.join(__dirname, './renderer/gallery.html'))
 }
 
 // This method will be called when Electron has finished
@@ -52,6 +72,24 @@ const menu = [
         label: 'Quit',
         click: () => app.quit(),
         accelerator: 'CmdOrCtrl+W'
+      }
+    ]
+  },
+  {
+    label: 'Gallery',
+    submenu: [
+      {
+        label: 'Images',
+        click: createGalleryWindow,
+      }
+    ]
+  },
+  {
+    label: 'Help',
+    submenu: [
+      {
+        label: 'About',
+        click: createAboutWindow,
       }
     ]
   }
