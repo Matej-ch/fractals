@@ -12,7 +12,9 @@ function createMainWindow () {
     width: isDev ? 1000 : 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, './preload.js'),
+      contextIsolation: true,
+      nodeIntegrationInWorker: true,
     }
   })
 
