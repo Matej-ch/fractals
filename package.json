@@ -16,7 +16,7 @@
   ],
   "author": "Matej ch",
   "devDependencies": {
-    "electron": "^26.3.0"
+    "electron": "^27.0.0"
   },
   "dependencies": {
     "toastify-js": "^1.12.0"
